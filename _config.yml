@@ -1,0 +1,17 @@
+BPEd-3201-Project/
+├── _config.yml
+├── index.md
+├── _layouts/
+│   └── default.html
+├── _includes/
+│   └── header.html
+│   └── footer.html
+├── _posts/ (optional blog format)
+├── drugs/
+│   ├── alcohol.md
+│   ├── cocaine.md
+│   └── nicotine.md
+├── assets/
+│   ├── css/style.css
+│   └── js/script.js
+└── README.md
