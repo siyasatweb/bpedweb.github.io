@@ -1,22 +1,24 @@
-# # BPEd 3201 Project
+# BPEd 3201 Project: Understanding Drugs of Abuse
 
-This is a simple educational website created as a project for the BPEd 3201 course.  
-It aims to inform users about the effects and risks of commonly abused substances using informative sections and interactive quizzes.
+This project is a simple, educational website designed for the BPEd 3201 course. It aims to raise awareness about the effects and risks of commonly abused substances. The site features informative content, embedded educational videos, and interactive quizzes for self-assessment.
 
 ## Features
 
-- Descriptions of substances like Alcohol, Cocaine, and Nicotine
-- Embedded educational videos
-- Simple interactive quizzes for each topic
-- Responsive and clean layout
+- **Responsive Layout**: Works on both desktop and mobile.
+- **Topics Covered**:
+  - Alcohol
+  - Cocaine
+  - Nicotine
+- **Embedded Videos**: Supports educational YouTube video content.
+- **Interactive Quizzes**: Users can test their knowledge on each topic.
 
-## How to Use
+## Technologies Used
 
-1. Download or clone the repository.
-2. Make sure the file `index.html` is in the root directory.
-3. Open `index.html` in any web browser to view the site.
-4. To publish as a website:
-   - Push this repo to GitHub.
-   - Go to the repository settings.
-   - Enable GitHub Pages from the **main branch**.
-   - Visit
+- HTML5
+- CSS3
+- JavaScript
+
+## How to View the Site
+
+If hosted on GitHub Pages:
+
