@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BPEd 3201 Project - Drugs of Abuse</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+    header { background: #003366; color: white; padding: 20px; text-align: center; }
+    main { padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .card h2 { margin-top: 0; color: #003366; }
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .quiz { margin-top: 15px; }
+    .quiz-question { font-weight: bold; }
+    .quiz-answer { margin: 5px 0; }
+    button { margin-top: 10px; padding: 8px 12px; background-color: #003366; color: white; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BPEd 3201 Project</h1>
+    <h2>Understanding Drugs of Abuse</h2>
+    <p>Educational resource on the effects and risks of common substances</p>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Alcohol</h2>
+      <p>Alcohol is a depressant that slows down brain function and impairs thinking, coordination, and reaction time. Regular abuse can lead to addiction, liver disease, and other health issues.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/embedded_video_id1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="quiz">
+        <p class="quiz-question">What type of drug is alcohol?</p>
+        <div class="quiz-answer"><input type="radio" name="alcohol" value="Stimulant"> Stimulant</div>
+        <div class="quiz-answer"><input type="radio" name="alcohol" value="Depressant"> Depressant</div>
+        <div class="quiz-answer"><input type="radio" name="alcohol" value="Hallucinogen"> Hallucinogen</div>
+        <button onclick="checkAnswer('alcohol', 'Depressant')">Check Answer</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Cocaine</h2>
+      <p>Cocaine is a powerful stimulant that increases dopamine levels, leading to intense euphoria followed by a crash. Long-term use can damage the brain, heart, and lungs.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/embedded_video_id2" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="quiz">
+        <p class="quiz-question">What is the effect of cocaine on dopamine?</p>
+        <div class="quiz-answer"><input type="radio" name="cocaine" value="Decreases"> Decreases</div>
+        <div class="quiz-answer"><input type="radio" name="cocaine" value="No effect"> No effect</div>
+        <div class="quiz-answer"><input type="radio" name="cocaine" value="Increases"> Increases</div>
+        <button onclick="checkAnswer('cocaine', 'Increases')">Check Answer</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Nicotine</h2>
+      <p>Nicotine, found in tobacco products, is highly addictive. It stimulates the release of dopamine, creating short-term pleasure but increasing the risk of heart disease and cancer.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/embedded_video_id3" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="quiz">
+        <p class="quiz-question">What system does nicotine primarily stimulate?</p>
+        <div class="quiz-answer"><input type="radio" name="nicotine" value="Respiratory"> Respiratory</div>
+        <div class="quiz-answer"><input type="radio" name="nicotine" value="Nervous"> Nervous</div>
+        <div class="quiz-answer"><input type="radio" name="nicotine" value="Digestive"> Digestive</div>
+        <button onclick="checkAnswer('nicotine', 'Nervous')">Check Answer</button>
+      </div>
+    </div>
+  </main>
+  <script>
+    function checkAnswer(question, correctAnswer) {
+      const answers = document.getElementsByName(question);
+      let selected = null;
+      for (const answer of answers) {
+        if (answer.checked) {
+          selected = answer.value;
+          break;
+        }
+      }
+      if (selected === correctAnswer) {
+        alert("Correct!");
+      } else {
+        alert("Incorrect. Try again!");
+      }
+    }
+  </script>
+</body>
+</html>
