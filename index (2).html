@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BPEd 3201 Project - Drugs of Abuse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>BPEd 3201 Project</h1>
+    <h2>Understanding Drugs of Abuse</h2>
+    <p>Educational resource on the effects and risks of common substances</p>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Alcohol</h2>
+      <p>Alcohol is a depressant that slows down brain function and impairs thinking, coordination, and reaction time. Regular abuse can lead to addiction, liver disease, and other health issues.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/embedded_video_id1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="quiz">
+        <p class="quiz-question">What type of drug is alcohol?</p>
+        <div class="quiz-answer"><input type="radio" name="alcohol" value="Stimulant"> Stimulant</div>
+        <div class="quiz-answer"><input type="radio" name="alcohol" value="Depressant"> Depressant</div>
+        <div class="quiz-answer"><input type="radio" name="alcohol" value="Hallucinogen"> Hallucinogen</div>
+        <button onclick="checkAnswer('alcohol', 'Depressant')">Check Answer</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Cocaine</h2>
+      <p>Cocaine is a powerful stimulant that increases dopamine levels, leading to intense euphoria followed by a crash. Long-term use can damage the brain, heart, and lungs.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/embedded_video_id2" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="quiz">
+        <p class="quiz-question">What is the effect of cocaine on dopamine?</p>
+        <div class="quiz-answer"><input type="radio" name="cocaine" value="Decreases"> Decreases</div>
+        <div class="quiz-answer"><input type="radio" name="cocaine" value="No effect"> No effect</div>
+        <div class="quiz-answer"><input type="radio" name="cocaine" value="Increases"> Increases</div>
+        <button onclick="checkAnswer('cocaine', 'Increases')">Check Answer</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Nicotine</h2>
+      <p>Nicotine, found in tobacco products, is highly addictive. It stimulates the release of dopamine, creating short-term pleasure but increasing the risk of heart disease and cancer.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/embedded_video_id3" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="quiz">
+        <p class="quiz-question">What system does nicotine primarily stimulate?</p>
+        <div class="quiz-answer"><input type="radio" name="nicotine" value="Respiratory"> Respiratory</div>
+        <div class="quiz-answer"><input type="radio" name="nicotine" value="Nervous"> Nervous</div>
+        <div class="quiz-answer"><input type="radio" name="nicotine" value="Digestive"> Digestive</div>
+        <button onclick="checkAnswer('nicotine', 'Nervous')">Check Answer</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
